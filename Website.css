@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url("https://c1.wallpaperflare.com/preview/226/318/321/livingroom-interior-design-furniture-indoors.jpg");
+  background-size: cover;
+}
+.mainBg {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav {
+  width: 85%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav h4 {
+  color: aliceblue;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+}
+
+.nav ul li::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  background: aqua;
+  left: 0;
+  bottom: -10px;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.nav ul li:hover::after {
+  width: 100%;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: aliceblue;
+  transition: 1.5s;
+}
+
+.mainBody {
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  text-align: center;
+}
+
+.mainBody h2 {
+  font-size: 68px;
+  margin: 10px 0;
+}
+
+.mainBody p {
+  margin: 10px 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.mainBody .btns {
+  margin: 10px 0;
+}
+
+.mainBody .btns button {
+  height: 35px;
+  width: 120px;
+  margin: 10px 30px;
+  border-radius: 10px;
+  border: 1px solid aqua;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: aliceblue;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+span {
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  background: aqua;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover {
+  border: none;
+}
+
+button:hover span {
+  width: 100%;
+}
